@@ -35,6 +35,7 @@ fs.writeFileSync("Learn.txt", 'Some data')
 fs.appendFileSync("Learn.txt", "added more data")
 
 //read data
+//utf helps to encode the data no need to convert into string
 const readdata = fs.readFileSync("Learn.txt", 'utf-8')
 console.log(readdata);
 
@@ -42,3 +43,4 @@ console.log(readdata);
 fs.renameSync("Learn.txt", "rename.txt")
 
 //delete
+fs.unlinkSync("rename.txt")
